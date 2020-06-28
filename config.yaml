@@ -1,0 +1,25 @@
+APP:
+  NAME: gin_api
+  RUNMODE: debug # 模式: debug, release, test
+  Addr: :8888 # 端口
+
+  READTIMEOUT: 100
+  WRITETIMEOUT: 100
+
+DB:
+  CONNECTION: mysql
+  HOST: 127.0.0.1
+  PORT: 3306
+  DATABASE: blog
+  TABLEPREFIX: blog_
+  USERNAME: root
+  PASSWORD: 123456
+  RUNMODE: true
+
+REDIS:
+  HOST: 127.0.0.1:6379
+  PASSWORD:
+  MAX_IDLE: 30
+  MAX_ACTIVE: 30
+  IDLE_TIMEOUT: 120
+
